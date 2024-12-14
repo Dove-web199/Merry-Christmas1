@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ariel", sans-serif;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    background: url("bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.logo {
+    font-size: 1.7em;
+    cursor: default;
+    color: black;
+}
+
+.navigation a {
+    color: ;
+    font-size: 1.1em;
+    margin-left: 12px;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.navigation a:hover span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.text {
+    color: snow;
+    text-align: center;
+    letter-spacing: .1em;
+    text-shadow: 0 0 10px black(0, 0, 0, .);
+}
+
+.text h1 {
+    font-size: 9em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url("bg.jpg");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: backText 20s linear infinite alternate;
+}
+
+.text h2 {
+    font-size: 9em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background: url("bg.jpg");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: backText 20s linear infinite alternate;
+}
+
+.text p {
+    font-size: 1.2em;
+    color: black;
+}
+
+@keyframes backText {
+    100% {
+        background-position: 2000px 0;
+    }
+}
